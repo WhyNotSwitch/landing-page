@@ -419,7 +419,7 @@ a.active {
 	position: relative;
 	background: url("https://res.cloudinary.com/christwin/image/upload/v1623968358/Switch%28media%29/homeRoof_tmzqrl.jpg") top center;
 	background-size: cover;
-  background-attachment: fixed;
+	background-attachment: fixed;
 }
 
 #hero:before {
@@ -539,20 +539,64 @@ a.active {
 
 /* -----------------------------------------------------------------------------
 
+    ABOUT
+
+----------------------------------------------------------------------------- */ 
+#about .container.literature .row div {
+	text-align: center;
+	padding-top: 40px;
+}
+
+#about .container.literature .row div a {
+	background-color: #c9211e;
+	text-transform: capitalize;
+	font-family: "crimson text", sans-serif;
+	font-size: 22px;
+}
+
+#about .container.literature .row div a:hover {
+	color: #fff;
+}
+
+#about .literature {
+	padding: 5%;
+}
+
+#about .literature .heading {
+	padding-left: 5%;
+}
+
+#about .literature p {
+	padding: 0 10% 0 10%;
+	font-size: 18px;
+}
+
+/* -----------------------------------------------------------------------------
+
     PARTNERS
 
 ----------------------------------------------------------------------------- */ 
-.partners {
+#partners {
   padding: 50px 0;
   text-align: center;
-  background-color: #f5f5f5;
+  background-color: #fff;
 }
 
-.partners h5 {
-  padding-bottom: 30px;
+#partners h5 {
   font-family: "crimson text", sans-serif;
   margin: 0;
   font-size: 32px;
+}
+
+
+#partners div.company a img {
+	object-fit:contain;
+	width:100%;
+	height:auto;
+}
+
+#partners div.preamble img {
+	padding: 10px 0 30px 0;
 }
 
 /* -----------------------------------------------------------------------------
@@ -563,11 +607,24 @@ a.active {
 
 #footer {
   padding-top: 30px;
-  background: #c9211e;
+  width: 100%;
+  position: relative;
+  background: url("https://res.cloudinary.com/christwin/image/upload/v1625847315/Switch%28media%29/world_zrzmoz.jpg") center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 1000px #c9211edf;
 }
 
 #footer .preamble img {
   margin: 0;
+}
+
+@media (max-width: 768px) {
+  #footer {
+    background-size: cover;
+    background-position-x: top;
+	}
+	
 }
 
 /* -------------------------------------------------------------------------
@@ -701,6 +758,35 @@ a.active {
           transition: all .3s ease-in-out;
 }
 
+#footer .widget div.social {
+	padding-top: 15px !important;
+  }
+  
+#footer .widget.widget-social div {
+	font-size: medium;
+	text-align: center;
+	text-justify: auto;
+}
+  
+#footer .widget.widget-social a {
+	display: inline !important;
+	font-size: 40px !important;
+}
+  
+#footer .widget.widget-social h5 {
+	float: none !important;
+	color: #ced0d3 !important;
+}
+  
+#footer .widget.widget-newsletter {
+	color: #ced0d3 !important;
+}
+  
+#footer .flag-icons {
+	border-radius: 100%;
+	height: 35px;
+}
+
 /* -------------------------------------------------------------------------
     FOOTER COPYRIGHTS
 ------------------------------------------------------------------------- */
@@ -720,62 +806,6 @@ a.active {
   color: #fff;
 }
 
-#footer .footer-copyrights a:hover { text-decoration: underline; }
-.literature {
-  padding: 5%;
-}
-
-.literature .heading {
-  padding-left: 5%;
-}
-
-.literature p {
-  padding: 0 10% 0 10%;
-  font-size: 18px;
-}
-
-#footer .widget div.social {
-  padding-top: 15px !important;
-}
-
-.widget.widget-social div {
-  font-size: medium;
-  text-align: center;
-  text-justify: auto;
-}
-
-.widget.widget-social a {
-  display: inline !important;
-  font-size: 40px !important;
-}
-
-.widget.widget-social h5 {
-  float: none !important;
-  color: #ced0d3 !important;
-}
-
-.widget.widget-newsletter {
-  color: #ced0d3 !important;
-}
-
-.flag-icons {
-  border-radius: 100%;
-  height: 35px;
-}
-
-
-#about .container.literature .row div {
-  text-align: center;
-  padding-top: 40px;
-}
-
-#about .container.literature .row div a {
-  background-color: #c9211e;
-  text-transform: capitalize;
-  font-family: "crimson text", sans-serif;
-  font-size: 22px;
-}
-
-#about .container.literature .row div a:hover {
-  color: #fff;
+#footer .footer-copyrights a:hover { 
+	text-decoration: underline; 
 }
