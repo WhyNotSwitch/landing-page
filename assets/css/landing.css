@@ -84,7 +84,7 @@ p {
 }
 
 li {
-  font: normal normal 14px/30px "crimson text", sans-serif;
+  font: normal normal 14px/30px "Poppins", sans-serif;
   list-style-type: none;
   color: #1a1a1a;
 }
@@ -190,7 +190,7 @@ a.active {
 	font-size: 22px;
 	padding: 0 4px;
 	letter-spacing: 0.4px;
-	font-family: "crimson text", sans-serif;
+	font-family: "Poppins", sans-serif;
 }
 
 .nav-menu>ul>li>a:before {
